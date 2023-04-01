@@ -17,7 +17,6 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.0",
-        "drupal/adminimal_theme": "^1.6",
         "drupal/backup_migrate": "^5.0",
         "drupal/better_exposed_filters": "^5.0",
         "drupal/bg_image_formatter": "^1.15",
@@ -31,6 +30,7 @@
         "drupal/fitvids": "^1.1",
         "drupal/google_analytics": "^4.0",
         "drupal/honeypot": "^2.0",
+        "drupal/httpswww": "^2.1",
         "drupal/linkit": "^6.0@beta",
         "drupal/metatag": "^1.16",
         "drupal/paragraphs": "^1.12",

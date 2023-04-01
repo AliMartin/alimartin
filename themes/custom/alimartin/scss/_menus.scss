@@ -5,6 +5,7 @@
   ul.navbar-nav {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start !important;
     gap: 30px;
     font-family: $headings-font-family;
     background-color: inherit;
@@ -40,7 +41,7 @@
     }
     .dropdown-toggle::after {
       position: relative;
-      top: 7px;
+      // top: 7px;
     }
   }
 }

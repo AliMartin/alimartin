@@ -35,6 +35,7 @@ module:
   help: 0
   history: 0
   honeypot: 0
+  httpswww: 0
   image: 0
   jquery_ui: 0
   jquery_ui_datepicker: 0

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9310b2de9399342612a3e60dfa6e3983",
+    "content-hash": "bea5375c031b633c3380963834c79255",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -600,59 +600,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
-            }
-        },
-        {
-            "name": "drupal/adminimal_theme",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/adminimal_theme.git",
-                "reference": "8.x-1.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "89132d0853388afe8dfd11fb83c69a48d8c13413"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1602006937",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "ANDiTKO",
-                    "homepage": "https://www.drupal.org/user/1428124"
-                },
-                {
-                    "name": "andrey.troeglazov",
-                    "homepage": "https://www.drupal.org/user/3145389"
-                },
-                {
-                    "name": "realityloop",
-                    "homepage": "https://www.drupal.org/user/139189"
-                }
-            ],
-            "description": "Drupal administration theme with modern minimalist design.",
-            "homepage": "https://www.drupal.org/project/adminimal_theme",
-            "support": {
-                "source": "https://git.drupalcode.org/project/adminimal_theme",
-                "issues": "https://www.drupal.org/project/issues/adminimal_theme"
             }
         },
         {
@@ -1991,6 +1938,50 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/honeypot",
                 "issues": "https://www.drupal.org/project/issues/honeypot"
+            }
+        },
+        {
+            "name": "drupal/httpswww",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/httpswww.git",
+                "reference": "2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/httpswww-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "afa133e1f5e0af04debc5646d22627a2cf5970d3"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.1",
+                    "datestamp": "1676132345",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "enzipher",
+                    "homepage": "https://www.drupal.org/user/179782"
+                }
+            ],
+            "description": "Redirects to HTTPS with or without the \"www\" prefix.",
+            "homepage": "https://www.drupal.org/project/httpswww",
+            "support": {
+                "source": "https://git.drupalcode.org/project/httpswww"
             }
         },
         {
