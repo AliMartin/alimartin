@@ -1,0 +1,20 @@
+uuid: 5d5db6c1-d89b-4c1a-996d-da8b9de6de51
+langcode: en
+status: true
+dependencies:
+  theme:
+    - alimartin
+_core:
+  default_config_hash: e7csd8HW6MnK7O5Ax95I7E-zcpD1S6zZFEM2aVOhNbI
+id: alimartin_local_actions
+theme: alimartin
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

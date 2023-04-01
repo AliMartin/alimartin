@@ -1,0 +1,34 @@
+uuid: 87b6e9fb-60c3-4f42-a58c-d1f61295bf50
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.landing_page
+    - field.field.media.image.field_media_image
+    - image.style.landig
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: whJrNezqUJ7Qhg7raMQj2Hz9JPiWxijezhWIEN9BVVk
+id: media.image.landing_page
+targetEntityType: media
+bundle: image
+mode: landing_page
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: landig
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

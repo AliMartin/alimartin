@@ -1,0 +1,34 @@
+uuid: 0d605839-05fa-404f-8478-6928cb2fb214
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.logo
+    - image.style.logo_small
+  theme:
+    - alimartin
+id: logo_small
+label: Logo
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: logo_small
+    breakpoint_id: alimartin.screen.md-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: logo_small
+    breakpoint_id: alimartin.screen.sm-max
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: logo_small
+    breakpoint_id: alimartin.screen.sm-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: logo_small
+    breakpoint_id: alimartin.screen.xs-max
+    multiplier: 1x
+breakpoint_group: alimartin.screen
+fallback_image_style: logo

@@ -1,0 +1,10 @@
+uuid: dd40fc4b-bbf4-458f-9d5c-8ee2ab852a91
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.landing_page
+label: 'Landing page'
+targetEntityType: media
+cache: true

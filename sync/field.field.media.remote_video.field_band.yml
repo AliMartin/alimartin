@@ -1,0 +1,29 @@
+uuid: bbce66ba-13fd-47d8-8ac9-7e1f03788913
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_band
+    - media.type.remote_video
+    - taxonomy.vocabulary.band
+id: media.remote_video.field_band
+field_name: field_band
+entity_type: media
+bundle: remote_video
+label: Band
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      band: band
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

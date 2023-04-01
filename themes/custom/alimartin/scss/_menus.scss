@@ -1,0 +1,79 @@
+// Desktop menu
+#block-alimartin-main-navigation {
+  padding: 0.5rem 0 1rem 0;
+
+  ul.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: $headings-font-family;
+    background-color: inherit;
+  
+    li {
+      a,
+      .nav-link {
+        padding: 0;
+
+        &.is-active,
+        &:hover,
+        &:focus {
+          color: $red;
+          background-color: inherit;
+        }
+      }
+    }
+  }
+  ul.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    a {
+      padding: .25rem 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #block-alimartin-main-navigation {
+    ul.navbar-nav {
+      font-size: 0.9rem;
+      gap: 25px;
+    }
+    .dropdown-toggle::after {
+      position: relative;
+      top: 7px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #block-alimartin-main-navigation {
+    display: none;
+  }
+}
+
+
+// Mobile menu
+
+#block-responsivemenumobileicon {
+  .responsive-menu-toggle-icon::before,
+  .responsive-menu-toggle-icon::after,
+  .responsive-menu-toggle-icon span.icon {
+    background: $black;
+  }
+  .label {
+    display: none;
+  }
+}
+
+.mm-menu {
+  font-family: $headings-font-family;
+  color: $black;
+
+  a {
+    &.is-active,
+    &:hover,
+    &:focus {
+      color: $red;
+    }
+  }
+}

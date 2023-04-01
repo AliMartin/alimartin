@@ -1,0 +1,27 @@
+uuid: ee1fbdc0-2397-454b-bb46-e2c71d2977f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - alimartin
+_core:
+  default_config_hash: PVXGc7Bud-_57y167WQN62-qlo3TzrZGbUbU8DrBpm0
+id: alimartin_main_navigation
+theme: alimartin
+region: nav_main
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

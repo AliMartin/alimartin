@@ -1,0 +1,29 @@
+uuid: e6dd2542-b703-4799-bacf-a4af700aac64
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_page
+  module:
+    - system
+    - views
+  theme:
+    - alimartin
+id: views_block__blog_page_block_1
+theme: alimartin
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:blog_page-block_1'
+settings:
+  id: 'views_block:blog_page-block_1'
+  label: 'Latest blog entries'
+  label_display: visible
+  provider: views
+  views_label: 'Latest blog entries'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,15 @@
+uuid: 962442fd-52ef-47c2-97d1-36b060a06078
+langcode: en
+status: true
+dependencies: {  }
+name: landig
+label: 'Landing page content'
+effects:
+  32cee1da-7723-4958-8530-374f4591f8b5:
+    uuid: 32cee1da-7723-4958-8530-374f4591f8b5
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false

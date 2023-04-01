@@ -1,0 +1,23 @@
+uuid: e4584c3b-4948-42cf-9991-15d243d35540
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_promote_to_portfolio
+    - media.type.remote_video
+id: media.remote_video.field_promote_to_portfolio
+field_name: field_promote_to_portfolio
+entity_type: media
+bundle: remote_video
+label: 'Promote to portfolio'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

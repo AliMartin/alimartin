@@ -1,0 +1,25 @@
+uuid: b50c5950-ea10-4e3c-b03e-cc3d94b6232a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3e17b197-358e-4720-bac7-10d72bb2842e'
+  module:
+    - block_content
+  theme:
+    - alimartin
+id: footertest
+theme: alimartin
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:3e17b197-358e-4720-bac7-10d72bb2842e'
+settings:
+  id: 'block_content:3e17b197-358e-4720-bac7-10d72bb2842e'
+  label: 'Footer test'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: 096e656f-a9ba-4652-945d-8a00c0f50693
+langcode: en
+status: true
+dependencies: {  }
+id: patch
+label: Patch
+icon_uuid: null
+icon_default: null
+description: 'Add a Zoom patch file.'
+behavior_plugins: {  }

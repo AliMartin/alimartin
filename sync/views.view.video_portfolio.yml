@@ -1,0 +1,448 @@
+uuid: 2428dd16-f521-4b7e-b0c0-cabc371aea62
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.portfolio
+    - media.type.remote_video
+    - system.menu.main
+    - taxonomy.vocabulary.band
+    - taxonomy.vocabulary.video_type
+  content:
+    - 'taxonomy_term:band:eff2c948-f963-4c94-8ead-38940335c9a1'
+    - 'taxonomy_term:band:f83cfddd-2665-475b-b720-56afbb5ec6cd'
+    - 'taxonomy_term:video_type:2c39797b-9e71-44ab-9c4a-6f95f988209e'
+    - 'taxonomy_term:video_type:3a811d52-10bc-487a-a908-a232c787de56'
+    - 'taxonomy_term:video_type:4722959e-84d8-4c12-890e-0f06d4ad3eaf'
+  module:
+    - better_exposed_filters
+    - media
+    - taxonomy
+    - user
+id: video_portfolio
+label: 'Video portfolio'
+module: views
+description: ''
+tag: ''
+base_table: media_field_data
+base_field: mid
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: Showreel
+      fields:
+        rendered_entity:
+          id: rendered_entity
+          table: media
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: media
+          plugin_id: rendered_entity
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: portfolio
+      pager:
+        type: none
+        options:
+          offset: 0
+          items_per_page: null
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: true
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: full_html
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              field_band_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_video_type_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+      access:
+        type: perm
+        options:
+          perm: 'view media'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_sticky_value:
+          id: field_sticky_value
+          table: media__field_sticky
+          field: field_sticky_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+        created:
+          id: created
+          table: media_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: media
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: media_field_data
+          field: status
+          entity_type: media
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        bundle:
+          id: bundle
+          table: media_field_data
+          field: bundle
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: media
+          entity_field: bundle
+          plugin_id: bundle
+          operator: in
+          value:
+            remote_video: remote_video
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_promote_to_portfolio_value:
+          id: field_promote_to_portfolio_value
+          table: media__field_promote_to_portfolio
+          field: field_promote_to_portfolio_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_band_target_id:
+          id: field_band_target_id
+          table: media__field_band
+          field: field_band_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            12: 12
+            5: 5
+          group: 1
+          exposed: false
+          expose:
+            operator_id: field_band_target_id_op
+            label: Band
+            description: ''
+            use_operator: false
+            operator: field_band_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_band_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: band
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_video_type_target_id:
+          id: field_video_type_target_id
+          table: media__field_video_type
+          field: field_video_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            8: 8
+            7: 7
+            9: 9
+          group: 1
+          exposed: false
+          expose:
+            operator_id: field_video_type_target_id_op
+            label: Type
+            description: ''
+            use_operator: false
+            operator: field_video_type_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_video_type_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: video_type
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:media'
+        options:
+          relationship: none
+          view_mode: portfolio
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - user
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.media.audio.default'
+        - 'config:core.entity_view_display.media.audio.media_library'
+        - 'config:core.entity_view_display.media.document.default'
+        - 'config:core.entity_view_display.media.document.media_library'
+        - 'config:core.entity_view_display.media.image.blog'
+        - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.landing_page'
+        - 'config:core.entity_view_display.media.image.logo'
+        - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.remote_video.default'
+        - 'config:core.entity_view_display.media.remote_video.media_library'
+        - 'config:core.entity_view_display.media.remote_video.portfolio'
+        - 'config:core.entity_view_display.media.video.default'
+        - 'config:core.entity_view_display.media.video.media_library'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: showreel
+      menu:
+        type: normal
+        title: Showreel
+        description: Showreel
+        weight: -48
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - user
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.media.audio.default'
+        - 'config:core.entity_view_display.media.audio.media_library'
+        - 'config:core.entity_view_display.media.document.default'
+        - 'config:core.entity_view_display.media.document.media_library'
+        - 'config:core.entity_view_display.media.image.blog'
+        - 'config:core.entity_view_display.media.image.default'
+        - 'config:core.entity_view_display.media.image.landing_page'
+        - 'config:core.entity_view_display.media.image.logo'
+        - 'config:core.entity_view_display.media.image.media_library'
+        - 'config:core.entity_view_display.media.remote_video.default'
+        - 'config:core.entity_view_display.media.remote_video.media_library'
+        - 'config:core.entity_view_display.media.remote_video.portfolio'
+        - 'config:core.entity_view_display.media.video.default'
+        - 'config:core.entity_view_display.media.video.media_library'

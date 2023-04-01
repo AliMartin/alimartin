@@ -1,0 +1,27 @@
+uuid: be4e84ce-3b68-46e1-a9c3-dcb34514b24b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file
+    - paragraphs.paragraphs_type.attachments
+  module:
+    - file
+id: paragraph.attachments.field_file
+field_name: field_file
+entity_type: paragraph
+bundle: attachments
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt zptc mp3'
+  max_filesize: ''
+  description_field: true
+field_type: file

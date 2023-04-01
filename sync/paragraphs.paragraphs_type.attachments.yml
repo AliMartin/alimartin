@@ -1,0 +1,10 @@
+uuid: 1d190ce3-7f9c-4e3b-b413-61a7bd7eeaee
+langcode: en
+status: true
+dependencies: {  }
+id: attachments
+label: Attachments
+icon_uuid: null
+icon_default: null
+description: 'Upload files to the website.'
+behavior_plugins: {  }

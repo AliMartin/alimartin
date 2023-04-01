@@ -1,0 +1,22 @@
+uuid: c6438095-bea0-4888-aa1c-8b6012d32cb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alimartin
+_core:
+  default_config_hash: SIxdLAn9XFu7QH1eTPmyOGggQ35suipfE8_4c1KanAE
+id: alimartin_messages
+theme: alimartin
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: 5cadfffe-25e3-4179-adde-96951705e9d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.patch.field_file
+    - field.field.paragraph.patch.field_text
+    - paragraphs.paragraphs_type.patch
+  module:
+    - file
+    - text
+id: paragraph.patch.default
+targetEntityType: paragraph
+bundle: patch
+mode: default
+content:
+  field_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

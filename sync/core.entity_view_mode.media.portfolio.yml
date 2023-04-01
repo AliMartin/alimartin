@@ -1,0 +1,10 @@
+uuid: e0aee70e-9ca4-4b43-baf0-32c4df1804da
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.portfolio
+label: Portfolio
+targetEntityType: media
+cache: true
