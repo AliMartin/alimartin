@@ -12,9 +12,15 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
+        "bower-asset/fitvids": "^1.0",
+        "bower-asset/mmenu": "^8.0",
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.4",
         "drupal/backup_migrate": "^5.0",
@@ -22,11 +28,11 @@
         "drupal/bg_image_formatter": "^1.15",
         "drupal/blazy": "^2.16",
         "drupal/block_field": "^1.0@RC",
-        "drupal/bootstrap5": "^3.0",
+        "drupal/bootstrap5": "^4.0@alpha",
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-project-message": "^10",
         "drupal/core-recommended": "^10",
-        "drupal/core-vendor-hardening": "^9.3",
+        "drupal/core-vendor-hardening": "^10",
         "drupal/ctools": "^4.0",
         "drupal/entity_embed": "^1.4",
         "drupal/fitvids": "^2.0",
@@ -38,12 +44,16 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.2",
+        "drupal/responsive_menu": "^5.0@alpha",
         "drupal/slick": "^2.9",
         "drupal/slick_extras": "^1.0@RC",
         "drupal/slick_views": "^2.7",
         "drupal/token": "^1.12",
         "drupal/upgrade_status": "^4.0",
-        "drupal/webform": "^6.2@beta"
+        "drupal/webform": "^6.2@beta",
+        "npm-asset/blazy": "^1.8",
+        "npm-asset/superfish": "^1.7",
+        "oomphinc/composer-installers-extender": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -56,7 +66,8 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "drupal/core-vendor-hardening": true
+            "drupal/core-vendor-hardening": true,
+            "oomphinc/composer-installers-extender": true
         }
     },
     "extra": {
@@ -65,12 +76,18 @@
                 "web-root": "./"
             }
         },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
         "installer-paths": {
             "core": [
                 "type:drupal-core"
             ],
             "libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
             ],
             "modules/contrib/{$name}": [
                 "type:drupal-module"
