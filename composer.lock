@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3e1d1900043545fce7359a0197656ff",
+    "content-hash": "f905ddf6271357d6768305080e1eea2b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2621,56 +2621,6 @@
             "support": {
                 "source": "https://git.drupal.org/project/recaptcha.git",
                 "issues": "https://www.drupal.org/project/issues/recaptcha"
-            }
-        },
-        {
-            "name": "drupal/responsive_menu",
-            "version": "5.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/responsive_menu.git",
-                "reference": "5.0.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/responsive_menu-5.0.0-alpha1.zip",
-                "reference": "5.0.0-alpha1",
-                "shasum": "caeba2f1f6d711e536cb51746246bc1bf1c8860a"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "5.0.0-alpha1",
-                    "datestamp": "1698223072",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Tancredi D'Onofrio (tanc)",
-                    "homepage": "https://www.drupal.org/u/tanc",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "tanc",
-                    "homepage": "https://www.drupal.org/user/64430"
-                }
-            ],
-            "description": "Provides a javascript based off-canvas responsive menu with depth. At wider browser widths it provides a horizontal menu capable of drop downs and flyouts",
-            "homepage": "https://drupal.org/project/responsive_menu",
-            "support": {
-                "source": "https://cgit.drupalcode.org/responsive_menu",
-                "issues": "https://drupal.org/project/issues/responsive_menu"
             }
         },
         {
@@ -8961,7 +8911,6 @@
         "drupal/block_field": 5,
         "drupal/bootstrap5": 15,
         "drupal/linkit": 5,
-        "drupal/responsive_menu": 15,
         "drupal/slick_extras": 5,
         "drupal/webform": 10
     },

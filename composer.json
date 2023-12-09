@@ -44,7 +44,6 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.2",
-        "drupal/responsive_menu": "^5.0@alpha",
         "drupal/slick": "^2.9",
         "drupal/slick_extras": "^1.0@RC",
         "drupal/slick_views": "^2.7",
