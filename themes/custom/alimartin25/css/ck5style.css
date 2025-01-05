@@ -14236,6 +14236,13 @@ a > .ck-content code {
   .ck-content #contact-menu i {
     margin: inherit;
   }
+  .ck-content #contact-menu a {
+    display: flex;
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+  }
   .ck-content #contact-menu span {
     display: none;
   }
