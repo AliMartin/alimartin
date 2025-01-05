@@ -189,7 +189,7 @@ display:
         type: normal
         title: Media
         description: 'Media gallery'
-        weight: -41
+        weight: -47
         enabled: false
         expanded: false
         menu_name: main

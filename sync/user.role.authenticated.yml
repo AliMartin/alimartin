@@ -6,10 +6,9 @@ dependencies:
     - filter.format.basic_html
     - filter.format.webform_default
   module:
-    - comment
+    - background_image
     - file
     - filter
-    - google_analytics
     - media
     - shortcut
     - system
@@ -20,13 +19,10 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
   - 'access shortcuts'
   - 'delete own files'
-  - 'opt-in or out of google analytics tracking'
-  - 'post comments'
-  - 'skip comment approval'
   - 'use text format basic_html'
   - 'use text format webform_default'
+  - 'view background image'
   - 'view media'

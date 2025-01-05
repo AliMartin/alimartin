@@ -1,0 +1,29 @@
+uuid: fe5cde29-2447-4048-ba6d-1398b5353f43
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_page_bands
+  module:
+    - system
+    - views
+  theme:
+    - alimartin25
+id: alimartin25_views_block__home_page_bands_block_1
+theme: alimartin25
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:home_page_bands-block_1'
+settings:
+  id: 'views_block:home_page_bands-block_1'
+  label: 'Current projects'
+  label_display: visible
+  provider: views
+  views_label: 'Current projects'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

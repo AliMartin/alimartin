@@ -1,0 +1,94 @@
+_core:
+  default_config_hash: j3BcDXyzLHc2UkjLc-L0DaGpExUQdPyBeVEsMhKpVeQ
+defaults:
+  blur:
+    type: 2
+    radius: 50
+    speed: 1
+  dark: false
+  full_viewport: false
+  preload:
+    background_color: '#ffffff'
+  text:
+    value: ''
+    format: full_html
+entities:
+  node:
+    article:
+      enable: false
+      embed: false
+      require: false
+      group: advanced
+    page:
+      enable: false
+      embed: false
+      require: false
+      group: advanced
+    blog:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+    landing_page:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+    webform:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+  user:
+    user:
+      enable: false
+      embed: false
+      require: false
+      group: advanced
+  view:
+    view:
+      enable: false
+      embed: false
+      require: false
+      group: advanced
+  taxonomy_term:
+    band:
+      enable: false
+      embed: false
+      require: false
+      group: ''
+    tags:
+      enable: false
+      embed: false
+      require: false
+      group: ''
+    video_type:
+      enable: false
+      embed: false
+      require: false
+      group: ''
+  webform_submission:
+    contact:
+      enable: false
+      embed: false
+      require: false
+      group: ''
+  webform:
+    webform:
+      enable: false
+      embed: false
+      require: false
+      group: ''
+css:
+  base_class: background-image
+  retina_rules:
+    - 'only screen and (-webkit-min-device-pixel-ratio:2)'
+    - 'only screen and (min--moz-device-pixel-ratio:2)'
+    - 'only screen and (-o-min-device-pixel-ratio:2/1)'
+    - 'only screen and (min-device-pixel-ratio:2)'
+    - 'only screen and (min-resolution: 192dpi)'
+    - 'only screen and (min-resolution: 2dppx)'
+image_style:
+  preload: background_image_preload
+  fallback: background_image_lg
+  responsive: background_image

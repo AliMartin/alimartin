@@ -1,0 +1,20 @@
+uuid: e2d6c025-0951-4e67-a00c-2207df6c1eab
+langcode: en
+status: true
+dependencies:
+  module:
+    - background_image
+  theme:
+    - alimartin25
+id: alimartin25_backgroundimage
+theme: alimartin25
+region: background_image
+weight: 0
+provider: null
+plugin: background_image
+settings:
+  id: background_image
+  label: 'Background Image'
+  label_display: ''
+  provider: background_image
+visibility: {  }

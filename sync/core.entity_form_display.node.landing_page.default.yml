@@ -3,16 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.landing_page.field_background_image_desktop
-    - field.field.node.landing_page.field_background_image_mobile
-    - field.field.node.landing_page.field_background_image_tablet
     - field.field.node.landing_page.field_images
+    - field.field.node.landing_page.field_media_image
     - field.field.node.landing_page.field_paragraphs
     - field.field.node.landing_page.field_subtitle
     - image.style.thumbnail
     - node.type.landing_page
   module:
     - image
+    - media_library
     - paragraphs
     - path
 id: node.landing_page.default
@@ -26,14 +25,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_background_image_desktop:
-    type: image_image
-    weight: 2
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_images:
     type: image_image
     weight: 10
@@ -42,9 +33,16 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_media_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_paragraphs:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 2
     region: content
     settings:
       title: Paragraph
@@ -107,6 +105,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  field_background_image_mobile: true
-  field_background_image_tablet: true
+hidden: {  }

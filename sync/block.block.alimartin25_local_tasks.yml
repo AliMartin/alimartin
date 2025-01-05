@@ -1,0 +1,22 @@
+uuid: 92ae8715-a4ef-4867-aef9-a14c85e45123
+langcode: en
+status: true
+dependencies:
+  theme:
+    - alimartin25
+_core:
+  default_config_hash: So5gjR6X1cixREJizELvsbV2m-tQqq1NQ0VZkWGALFE
+id: alimartin25_local_tasks
+theme: alimartin25
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,51 @@
+uuid: f479bd0a-441d-42bf-beba-59b9b3e9191a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.showreel
+    - field.field.media.remote_video.field_band
+    - field.field.media.remote_video.field_description
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_promote_to_portfolio
+    - field.field.media.remote_video.field_sticky
+    - field.field.media.remote_video.field_video_type
+    - image.style.showreel
+    - media.type.remote_video
+  module:
+    - image
+_core:
+  default_config_hash: zQoBQ0BtnMM_rlDdgftyu6eI4AVs9mo5K8xq7NFO2Zc
+id: media.remote_video.showreel
+targetEntityType: media
+bundle: remote_video
+mode: showreel
+content:
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: showreel
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_band: true
+  field_description: true
+  field_media_oembed_video: true
+  field_promote_to_portfolio: true
+  field_sticky: true
+  field_video_type: true
+  uid: true

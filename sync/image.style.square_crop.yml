@@ -1,0 +1,15 @@
+uuid: da781c26-ce42-4776-ade5-756a48b632fd
+langcode: en
+status: true
+dependencies: {  }
+name: square_crop
+label: 'Square crop'
+effects:
+  7804ba70-a70c-4dac-a254-318d75bd0fa0:
+    uuid: 7804ba70-a70c-4dac-a254-318d75bd0fa0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

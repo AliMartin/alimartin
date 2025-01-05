@@ -2,9 +2,9 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 2e3e14c1-b9e3-47a8-9728-f8164ed37f04
-name: 'Alistair Martin | Bass Player'
+name: 'Ali Martin'
 mail: noreply@alimartin.com
-slogan: ''
+slogan: 'Bass Player'
 page:
   403: /node/13
   404: /node/13

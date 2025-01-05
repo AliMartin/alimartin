@@ -1,0 +1,22 @@
+uuid: 76923a00-17db-4e65-9c5a-4e51660be48a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - alimartin25
+_core:
+  default_config_hash: eveJu6sScnxbyDc5g0smccQAhY3gqjAN6-Sj3bDcd7w
+id: alimartin25_help
+theme: alimartin25
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

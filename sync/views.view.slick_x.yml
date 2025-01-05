@@ -324,8 +324,6 @@ display:
             caption:
               title: '0'
               alt: '0'
-            current_view_mode: _custom
-            style: ''
             background: false
             box_caption: ''
             box_caption_custom: ''
@@ -338,6 +336,8 @@ display:
             grid: ''
             grid_medium: ''
             grid_small: ''
+            style: ''
+            current_view_mode: _custom
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -468,7 +468,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 9
+          items_per_page: 20
       style:
         type: slick
         options:
@@ -478,7 +478,6 @@ display:
             title: '0'
           optionset: x_slick_for
           class: ''
-          id: ''
           image: field_images
           link: ''
           overlay: ''
@@ -486,11 +485,12 @@ display:
           vanilla: false
           layout: ''
           cache: 0
-          current_view_mode: block_asnavfor_multi_value
-          skin: default
           grid: ''
           grid_medium: ''
           grid_small: ''
+          current_view_mode: block_asnavfor_multi_value
+          id: ''
+          skin: default
           overridables:
             arrows: '0'
             autoplay: '0'
@@ -676,12 +676,9 @@ display:
             optionset: x_slick_for
             layout: stage-zebra
             cache: 0
-            current_view_mode: _custom
-            skin: classic
+            background: false
             loading: ''
             preload: false
-            style: ''
-            background: false
             responsive_image_style: ''
             image_style: slick
             media_switch: ''
@@ -690,6 +687,9 @@ display:
             grid: ''
             grid_medium: ''
             grid_small: ''
+            style: ''
+            current_view_mode: _custom
+            skin: classic
             overridables:
               arrows: '0'
               autoplay: '0'
@@ -922,9 +922,6 @@ display:
             optionset: x_slick_for
             layout: split-zebra
             cache: 0
-            current_view_mode: _custom
-            skin: split
-            style: ''
             background: false
             box_caption: ''
             box_caption_custom: ''
@@ -937,6 +934,9 @@ display:
             grid: ''
             grid_medium: ''
             grid_small: ''
+            style: ''
+            current_view_mode: _custom
+            skin: split
             overridables:
               draggable: draggable
               infinite: infinite
@@ -1106,9 +1106,6 @@ display:
             optionset: x_carousel
             layout: ''
             cache: 0
-            current_view_mode: _custom
-            skin: boxed-carousel
-            style: ''
             background: false
             box_caption: ''
             box_caption_custom: ''
@@ -1121,6 +1118,9 @@ display:
             grid: ''
             grid_medium: ''
             grid_small: ''
+            style: ''
+            current_view_mode: _custom
+            skin: boxed-carousel
             overridables:
               arrows: '0'
               autoplay: '0'
@@ -1379,9 +1379,6 @@ display:
             optionset: x_fullscreen
             layout: center-top
             cache: 0
-            current_view_mode: _custom
-            skin: fullscreen
-            style: ''
             background: true
             box_caption: ''
             box_caption_custom: ''
@@ -1394,6 +1391,9 @@ display:
             grid: ''
             grid_medium: ''
             grid_small: ''
+            style: ''
+            current_view_mode: _custom
+            skin: fullscreen
             overridables:
               draggable: draggable
               infinite: infinite
@@ -1623,7 +1623,6 @@ display:
             caption:
               title: '0'
               alt: '0'
-            current_view_mode: _custom
             background: false
             box_caption: ''
             box_caption_custom: ''
@@ -1633,6 +1632,7 @@ display:
             media_switch: ''
             ratio: fluid
             thumbnail_style: ''
+            current_view_mode: _custom
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1767,7 +1767,6 @@ display:
             edit_node: '0'
           optionset: x_grid
           class: ''
-          id: slick-grid
           image: field_image
           link: ''
           overlay: ''
@@ -1775,11 +1774,12 @@ display:
           vanilla: false
           layout: ''
           cache: 0
-          current_view_mode: block_grid
-          skin: grid
           grid: '5'
           grid_medium: '3'
           grid_small: '2'
+          current_view_mode: block_grid
+          id: slick-grid
+          skin: grid
           overridables:
             arrows: '0'
             autoplay: '0'
@@ -1895,9 +1895,6 @@ display:
             optionset: x_main
             layout: center-top
             cache: 0
-            current_view_mode: _custom
-            skin: fullwidth
-            style: ''
             background: false
             box_caption: ''
             box_caption_custom: ''
@@ -1910,6 +1907,9 @@ display:
             grid: ''
             grid_medium: ''
             grid_small: ''
+            style: ''
+            current_view_mode: _custom
+            skin: fullwidth
             overridables:
               arrows: '0'
               autoplay: '0'

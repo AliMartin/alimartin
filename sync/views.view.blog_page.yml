@@ -78,7 +78,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_entity_view
           settings:
-            view_mode: blog
+            view_mode: square_crop
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -508,6 +508,7 @@ display:
         title: false
         pager: false
       display_extenders: {  }
+      block_description: 'Blog block'
     cache_metadata:
       max-age: -1
       contexts:

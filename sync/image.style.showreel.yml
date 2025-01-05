@@ -1,0 +1,15 @@
+uuid: c1bb6c02-9753-4536-a953-0100a3a58515
+langcode: en
+status: true
+dependencies: {  }
+name: showreel
+label: Showreel
+effects:
+  ebdcd989-9daa-4105-8271-b60c59ee53f1:
+    uuid: ebdcd989-9daa-4105-8271-b60c59ee53f1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 270
+      anchor: center-center

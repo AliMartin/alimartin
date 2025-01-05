@@ -1,0 +1,25 @@
+uuid: fb2318bf-69a7-4cd6-9eb1-5178c7488a4c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9a2893f1-b343-4134-8476-982309c99552'
+  module:
+    - block_content
+  theme:
+    - alimartin25
+id: alimartin25_hyperluminal
+theme: alimartin25
+region: footer
+weight: -4
+provider: null
+plugin: 'block_content:9a2893f1-b343-4134-8476-982309c99552'
+settings:
+  id: 'block_content:9a2893f1-b343-4134-8476-982309c99552'
+  label: Hyperluminal
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

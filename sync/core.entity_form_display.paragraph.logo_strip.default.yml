@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.logo_strip.field_logo
+    - field.field.paragraph.logo_strip.field_paragraph_title
     - paragraphs.paragraphs_type.logo_strip
   module:
     - media_library
@@ -14,10 +15,18 @@ mode: default
 content:
   field_logo:
     type: media_library_widget
-    weight: 0
+    weight: 1
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_paragraph_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

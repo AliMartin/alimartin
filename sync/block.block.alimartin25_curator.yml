@@ -1,0 +1,30 @@
+uuid: 6b459c15-7f5b-44e1-8e2e-8cc4939c550a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:916bced9-a037-4931-a9c1-62d80e49ed92'
+  module:
+    - block_content
+    - system
+  theme:
+    - alimartin25
+id: alimartin25_curator
+theme: alimartin25
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:916bced9-a037-4931-a9c1-62d80e49ed92'
+settings:
+  id: 'block_content:916bced9-a037-4931-a9c1-62d80e49ed92'
+  label: Latest
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

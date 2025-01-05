@@ -1,0 +1,30 @@
+uuid: edf4c1c6-73a2-45b1-ae2d-09901a15626c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4e34f836-e82c-4af4-a698-11d712a911af'
+  module:
+    - block_content
+    - system
+  theme:
+    - alimartin25
+id: alimartin25_frontpageadditionaltext
+theme: alimartin25
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:4e34f836-e82c-4af4-a698-11d712a911af'
+settings:
+  id: 'block_content:4e34f836-e82c-4af4-a698-11d712a911af'
+  label: 'Front page additional text'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,20 @@
+uuid: 79425097-6170-4fc0-a8dd-893a36608ff1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - alimartin25
+_core:
+  default_config_hash: MC7GQlsXSWESA2vluVhUkiWjIB6ztDSF5rthd_uvyDo
+id: alimartin25_page_title
+theme: alimartin25
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

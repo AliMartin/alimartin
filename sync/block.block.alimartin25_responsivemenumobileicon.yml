@@ -1,0 +1,20 @@
+uuid: 8befc6ea-0010-4df8-a966-a67fe315c2c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - alimartin25
+id: alimartin25_responsivemenumobileicon
+theme: alimartin25
+region: nav_main
+weight: -7
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  label_display: '0'
+  provider: responsive_menu
+visibility: {  }

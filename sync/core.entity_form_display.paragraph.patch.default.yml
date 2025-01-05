@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.patch.field_file
+    - field.field.paragraph.patch.field_paragraph_title
     - field.field.paragraph.patch.field_text
     - paragraphs.paragraphs_type.patch
   module:
@@ -20,6 +21,14 @@ content:
     region: content
     settings:
       progress_indicator: throbber
+    third_party_settings: {  }
+  field_paragraph_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_text:
     type: text_textarea

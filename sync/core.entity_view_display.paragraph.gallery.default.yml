@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.gallery.field_paragraph_title
     - field.field.paragraph.gallery.field_slick_gallery
     - paragraphs.paragraphs_type.gallery
   module:
@@ -12,6 +13,14 @@ targetEntityType: paragraph
 bundle: gallery
 mode: default
 content:
+  field_paragraph_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_slick_gallery:
     type: block_field
     label: hidden

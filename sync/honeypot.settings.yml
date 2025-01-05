@@ -8,8 +8,8 @@ unprotected_forms:
   - views_exposed_form
   - honeypot_settings_form
 log: true
-element_name: your_email_address
-time_limit: 21
+element_name: email_address_1
+time_limit: 16
 expire: 300
 form_settings:
   user_register_form: false

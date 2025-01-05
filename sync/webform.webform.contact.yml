@@ -15,29 +15,55 @@ template: false
 archive: false
 id: contact
 title: Contact
-description: 'Basic email contact webform.'
+description: '<p>Basic email contact webform.</p>'
 categories: {  }
 elements: |-
-  name:
-    '#title': 'Your Name'
-    '#type': textfield
-    '#required': true
-    '#default_value': '[current-user:display-name]'
-  email:
-    '#title': 'Your Email'
-    '#type': email
-    '#required': true
-    '#default_value': '[current-user:mail]'
-  mobile:
-    '#type': textfield
-    '#title': 'Your Mobile'
-    '#format_items': comma
-    '#required': true
-  message:
-    '#title': Message
-    '#type': textarea
-    '#required': true
-    '#test': 'Please ignore this email.'
+  step_1:
+    '#type': webform_wizard_page
+    '#title': 'Step 1'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+    name:
+      '#type': textfield
+      '#title': Name
+      '#title_display': invisible
+      '#placeholder': 'What is your name?'
+      '#required': true
+      '#format_items': comma
+  step_2:
+    '#type': webform_wizard_page
+    '#title': 'Step 2'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+    email:
+      '#type': email
+      '#title': Email
+      '#title_display': invisible
+      '#placeholder': 'What is your email address?'
+      '#required': true
+      '#format_items': comma
+  step_3:
+    '#type': webform_wizard_page
+    '#title': 'Step 3'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+    telephone:
+      '#type': textfield
+      '#title': Telephone
+      '#title_display': invisible
+      '#placeholder': "What's your telephone number?"
+      '#format_items': comma
+  step_4:
+    '#type': webform_wizard_page
+    '#title': 'Step 4'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+    details:
+      '#type': textarea
+      '#title': Details
+      '#title_display': invisible
+      '#placeholder': 'Finally, if you can, please tell us a bit about your enquiry.'
+      '#format_items': comma
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -45,7 +71,7 @@ elements: |-
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   ajax_progress_type: ''
   ajax_effect: ''
@@ -146,10 +172,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
+  confirmation_type: inline
   confirmation_url: '<front>'
-  confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_title: 'Thank you'
+  confirmation_message: "<p>Many thanks for your interest, I'll get back to you as soon as possible!</p>"
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

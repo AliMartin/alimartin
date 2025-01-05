@@ -4,12 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.webform.body
-    - field.field.node.webform.field_background_image_desktop
     - field.field.node.webform.webform
-    - image.style.thumbnail
     - node.type.webform
   module:
-    - image
     - path
     - text
     - webform
@@ -35,14 +32,6 @@ content:
     weight: 5
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_background_image_desktop:
-    type: image_image
-    weight: 1
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
   path:
     type: path

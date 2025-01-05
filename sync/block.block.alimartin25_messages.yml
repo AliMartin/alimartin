@@ -1,0 +1,22 @@
+uuid: 319aec2c-6c41-42d0-a041-cfbfed7cdac2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alimartin25
+_core:
+  default_config_hash: O7v575mZritPlgg8moM3ZBVgB7ECzjZz_Owcb5l_Abo
+id: alimartin25_messages
+theme: alimartin25
+region: content
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

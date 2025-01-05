@@ -1,0 +1,25 @@
+uuid: 69032360-ae30-472f-a08a-0777cfeb90ab
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e36b3fb0-8b50-42ed-b910-84778f535e50'
+  module:
+    - block_content
+  theme:
+    - alimartin25
+id: alimartin25_contact
+theme: alimartin25
+region: nav_main
+weight: -8
+provider: null
+plugin: 'block_content:e36b3fb0-8b50-42ed-b910-84778f535e50'
+settings:
+  id: 'block_content:e36b3fb0-8b50-42ed-b910-84778f535e50'
+  label: Contact
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: ddd146e8-2b38-4c5c-8c36-82866d6647bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bbb2e014-8120-442c-bfe7-c176df817347'
+  module:
+    - block_content
+  theme:
+    - alimartin25
+id: alimartin25_socialcontact
+theme: alimartin25
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:bbb2e014-8120-442c-bfe7-c176df817347'
+settings:
+  id: 'block_content:bbb2e014-8120-442c-bfe7-c176df817347'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

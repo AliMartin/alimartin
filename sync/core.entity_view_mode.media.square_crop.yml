@@ -1,0 +1,11 @@
+uuid: 2cc8ebb4-b0fb-430c-8e3b-fee93172cf07
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.square_crop
+label: 'Square crop'
+description: 'This is used for the showcased bands on the home page'
+targetEntityType: media
+cache: true

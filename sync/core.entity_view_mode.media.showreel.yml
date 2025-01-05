@@ -1,0 +1,11 @@
+uuid: d082e52f-2fd7-4273-abc3-33387a6b4257
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.showreel
+label: Showreel
+description: ''
+targetEntityType: media
+cache: true
