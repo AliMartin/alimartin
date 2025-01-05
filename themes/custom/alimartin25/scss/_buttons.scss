@@ -1,0 +1,23 @@
+.btn,
+button.crt-load-more,
+.blog-text .view a,
+.paragraph--type--links .field--name-field-website a {
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  color: $white !important;
+  background-color: inherit !important;
+  border-bottom: inherit;
+  border: 1px solid $white;
+  border-radius: 30px;
+  padding: 10px 16px 6px 16px !important;
+  line-height: 1;
+
+  &:hover,
+  &:focus {
+    color: $white !important;
+    text-decoration: none;
+    border: 1px solid $primary !important;
+    background-color: $primary !important;
+ }
+}

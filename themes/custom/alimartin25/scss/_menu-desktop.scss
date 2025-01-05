@@ -1,0 +1,41 @@
+#contact-menu {
+  position: relative;
+  // top: -1px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-right: 15px;
+
+  i {
+    margin-right: 5px;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    line-height: 1;
+    padding: 6px 14px 4px 14px;
+    border: 1px solid $white;
+    border-radius: 40px;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $primary;
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+@media only screen and (max-width : 459px) {
+  #contact-menu {
+    i {
+      margin: inherit;
+    }
+    span {
+      display: none;
+    }
+  }
+}

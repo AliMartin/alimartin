@@ -16,6 +16,18 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jackmoore/colorbox",
+                "version": "1.6.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -23,12 +35,14 @@
         "bower-asset/mmenu": "^8.0",
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/background_image": "^2.0",
         "drupal/backup_migrate": "^5.0",
-        "drupal/better_exposed_filters": "^6.0",
-        "drupal/bg_image_formatter": "^1.15",
-        "drupal/blazy": "^2.16",
+        "drupal/better_exposed_filters": "^7.0",
+        "drupal/blazy": "^2.16 | ^3.0",
         "drupal/block_field": "^1.0@RC",
-        "drupal/bootstrap5": "^4.0@alpha",
+        "drupal/bootstrap5": "^4.0",
+        "drupal/colorbox_inline": "^2.0",
+        "drupal/colorbox_media_video": "^2.0",
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-project-message": "^10",
         "drupal/core-recommended": "^10",
@@ -36,21 +50,25 @@
         "drupal/ctools": "^4.0",
         "drupal/entity_embed": "^1.4",
         "drupal/fitvids": "^2.0",
-        "drupal/google_analytics": "^4.0",
         "drupal/honeypot": "^2.0",
         "drupal/httpswww": "^2.1",
-        "drupal/linkit": "^6.1@RC",
+        "drupal/inline_entity_form": "^3.0@RC",
+        "drupal/linkit": "^7.0@alpha",
         "drupal/metatag": "^2.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
-        "drupal/recaptcha": "^3.2",
-        "drupal/slick": "^2.9",
-        "drupal/slick_extras": "^1.0@RC",
-        "drupal/slick_views": "^2.7",
+        "drupal/plyr": "^1.0@alpha",
+        "drupal/responsive_favicons": "^2.0",
+        "drupal/responsive_menu": "^4.4",
+        "drupal/slick": "^2.9 | ^3.0",
+        "drupal/slick_extras": "^1.0@RC | ^2.0",
+        "drupal/slick_views": "^2.7 | ^3.0",
         "drupal/token": "^1.12",
-        "drupal/upgrade_status": "^4.0",
+        "drupal/upgrade_status": "^4.3",
         "drupal/webform": "^6.2@beta",
+        "jackmoore/colorbox": "^1.6",
         "npm-asset/blazy": "^1.8",
+        "npm-asset/slick-carousel": "^1.8",
         "npm-asset/superfish": "^1.7",
         "oomphinc/composer-installers-extender": "^2.0"
     },

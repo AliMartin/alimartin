@@ -1,0 +1,89 @@
+.path-frontpage {
+
+  // Undo default page width settings
+  main .region-content {
+    background-color: inherit;
+    max-width: inherit;
+    padding: inherit;
+    border-radius: inherit;
+
+    #block-alimartin25-content,
+    #block-alimartin25-frontpageadditionaltext {
+      background-color: rgba(0,0,0,0.8);
+      max-width: 800px;
+      margin: 0 auto 90px auto;
+      padding: 30px;
+      border-radius: $border-radius;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.view-home-page-bands {
+  margin-bottom: 90px;
+
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .views-row {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 15px;
+    padding: 15px;
+
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      // border: 1px solid $white;
+      margin: 0 0 10px 0;
+    }
+    .band-title {
+      font-family: $headings-font-family;
+      font-weight: $font-weight-bold;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: small;    
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: $primary;
+      img {
+        // border: 1px solid $primary;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+// Blog entries
+#block-alimartin25-views-block-blog-page-block-1 {
+  background-color: rgba(0,0,0,0.8);
+  max-width: 800px;
+  margin: 0 auto 90px auto;
+  padding: 30px;
+  border-radius: $border-radius;
+  text-align: left;
+
+  h2 {
+    text-align: left;
+  }
+}

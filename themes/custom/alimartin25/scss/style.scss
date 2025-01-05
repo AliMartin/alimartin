@@ -1,0 +1,26 @@
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overridden variables.
+// @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style';
+
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&family=Oxanium:wght@200..800&family=Tulpen+One&display=swap');
+
+
+@import 'reset';
+@import 'links';
+@import 'buttons';
+@import 'node';
+@import 'webform';
+@import 'paragraphs';
+@import 'header';
+@import 'footer';
+@import 'menu-desktop';
+@import 'menu-mobile';
+@import 'curator';
+@import 'front';

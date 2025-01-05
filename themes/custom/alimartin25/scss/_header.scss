@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 70px;
+  background-color: rgba(0,0,0,0.8);
+
+  nav.navbar {
+    margin: 0;
+    padding: 0;
+  }
+
+  .region-nav-main {
+    display: flex;
+    align-items: center;
+  }
+}
+
+#block-alimartin25-branding {
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    color: $white;
+
+    a {
+      color: $white;
+    }
+
+    .site-slogan {
+      font-size: 1.5rem;
+      font-weight: 200;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      &:before {
+        content: "|";
+        margin-right: 10px;
+      }
+    }
+
+    > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+
+  }
+}

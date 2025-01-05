@@ -1,0 +1,67 @@
+footer {
+  background-color: rgba(0,0,0,0.8);
+  padding: 90px 0 150px 0;
+  text-align: center;
+}
+
+
+#social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    span {
+      display: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      border: 1px solid $primary;
+      background-color: $primary;
+    }
+  }
+}
+
+
+#block-alimartin25-footertest {
+  font-size: medium;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin-bottom: 20px;
+
+  span {
+    font-weight: $font-weight-bold;
+  }
+}
+
+
+#hyperluminal {
+  .text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 8px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 10px;
+  }  
+}

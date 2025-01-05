@@ -1,0 +1,217 @@
+nav.tabs-primary ul {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+main .region-content {
+  background-color: rgba(0,0,0,0.8);
+  position: relative;
+  max-width: 800px;
+  padding: 30px 30px 90px 30px;
+  margin: 40vh auto 90px auto;
+  border-radius: $border-radius;
+}
+
+h1 {
+  text-align: center;
+}
+
+.field--name-field-subtitle {
+  font-family: $headings-font-family;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+.field--name-field-paragraphs {
+  .field--name-field-paragraph-title {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin: 0 0 0.5rem 0;
+  }
+  > .field__item {
+    margin-bottom: 30px;
+  }
+  > .field__item:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+
+ol, ul, menu {
+  list-style-type: disc;
+}
+
+
+// Showreel
+.path-showreel  {
+  // Undo default page width settings
+  main .region-content {
+    background-color: inherit;
+    max-width: inherit;
+    padding: inherit;
+    border-radius: inherit;
+  }
+}
+
+.view-video-portfolio {
+  margin-bottom: 90px;
+
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .views-row {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 15px;
+    padding: 15px;
+  }
+
+  .views-field-nothing-1 {
+    display: none;
+  }
+
+  .field--name-thumbnail {
+    margin-bottom: 15px;
+    img {
+      width: 300px;
+      height: auto;
+    }
+  }
+
+
+  .field--name-name {
+    font-family: $headings-font-family;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: medium;    
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    color: $primary;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+
+footer.node__meta {
+  padding: inherit;
+  margin-bottom: 1rem;
+  background-color: inherit;
+  font-family: $headings-font-family;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: medium;    
+}
+
+
+// Blogs
+.page-node-type-blog {
+  .field--name-field-media-image {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+
+// Blog listing page
+#block-alimartin25-views-block-blog-page-block-1,
+.path-blog {
+
+  main .region-content {
+    padding: 30px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .views-row {
+    min-height: 222px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .field--name-field-media-image {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 200px;
+      outline: none;
+      // border: 1px solid $white;
+    }
+  }
+
+  .blog-text {
+    overflow: auto;
+
+    .created {
+      font-family: $headings-font-family;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: medium;
+      margin-bottom: 15px;
+    }
+
+    .body {
+      margin-bottom: 22px;
+    }
+  
+    .view {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+
+@media only screen and (max-width : 767px) {
+  .path-blog {
+    .views-row {
+      text-align: center;
+    }
+    .field--name-field-media-image {
+      float: inherit;
+      margin-right: 0;
+    }
+  }
+}
