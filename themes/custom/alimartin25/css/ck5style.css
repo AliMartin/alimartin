@@ -13793,6 +13793,9 @@ a > .ck-content code {
   border: 1px solid #10acee !important;
   background-color: #10acee !important;
 }
+.ck-content body {
+  background-color: #000000;
+}
 .ck-content nav.tabs-primary ul {
   max-width: 800px;
   margin-left: auto;

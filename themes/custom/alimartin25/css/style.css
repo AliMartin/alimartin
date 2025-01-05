@@ -15194,6 +15194,10 @@ button.crt-load-more:focus,
   background-color: #10acee !important;
 }
 
+body {
+  background-color: #000000;
+}
+
 nav.tabs-primary ul {
   max-width: 800px;
   margin-left: auto;
