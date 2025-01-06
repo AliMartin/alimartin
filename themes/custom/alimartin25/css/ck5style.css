@@ -14470,5 +14470,17 @@ a > .ck-content code {
 .ck-content #block-alimartin25-views-block-blog-page-block-1 h2, .ck-content #block-alimartin25-views-block-blog-page-block-1 .h2 {
   text-align: left;
 }
+@media only screen and (max-width: 767px) {
+  .ck-content #block-alimartin25-views-block-blog-page-block-1 h2, .ck-content #block-alimartin25-views-block-blog-page-block-1 .h2 {
+    text-align: center;
+  }
+  .ck-content #block-alimartin25-views-block-blog-page-block-1 .views-row {
+    text-align: center;
+  }
+  .ck-content #block-alimartin25-views-block-blog-page-block-1 .field--name-field-media-image {
+    float: inherit;
+    margin-right: 0;
+  }
+}
 
 /*# sourceMappingURL=ck5style.css.map */

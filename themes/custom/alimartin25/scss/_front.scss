@@ -87,3 +87,18 @@
     text-align: left;
   }
 }
+
+@media only screen and (max-width : 767px) {
+  #block-alimartin25-views-block-blog-page-block-1 {
+    h2 {
+      text-align: center;
+    }
+    .views-row {
+      text-align: center;
+    }
+    .field--name-field-media-image {
+      float: inherit;
+      margin-right: 0;
+    }
+  }
+}
