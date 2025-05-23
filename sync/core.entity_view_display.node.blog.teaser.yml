@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog.body
     - field.field.node.blog.field_media_image
+    - field.field.node.blog.field_metatags
     - node.type.blog
   module:
     - text
@@ -30,3 +31,4 @@ content:
     region: content
 hidden:
   field_media_image: true
+  field_metatags: true

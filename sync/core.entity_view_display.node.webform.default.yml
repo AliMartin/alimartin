@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.webform.body
+    - field.field.node.webform.field_metatags
     - field.field.node.webform.webform
     - node.type.webform
   module:
+    - metatag
     - text
     - user
     - webform
@@ -24,6 +26,13 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -34,6 +43,7 @@ content:
     label: hidden
     settings:
       source_entity: true
+      lazy: false
     third_party_settings: {  }
     weight: 102
     region: content

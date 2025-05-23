@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.landing_page.field_images
     - field.field.node.landing_page.field_media_image
+    - field.field.node.landing_page.field_metatags
     - field.field.node.landing_page.field_paragraphs
     - field.field.node.landing_page.field_subtitle
     - image.style.thumbnail
@@ -12,6 +13,7 @@ dependencies:
   module:
     - image
     - media_library
+    - metatag
     - paragraphs
     - path
 id: node.landing_page.default
@@ -39,6 +41,14 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_metatags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_paragraphs:
     type: entity_reference_paragraphs

@@ -8,4 +8,6 @@ id: global
 label: Global
 tags:
   canonical_url: '[current-page:url]'
+  description: 'UK bass player, Bass Centre Elites Artist, with European shows for Pink Floyd Legacy, plus MUS3, Synfinity and Live Karaoke Band.'
+  rights: 'Hyperluminal Limited'
   title: '[current-page:title] | [site:name]'

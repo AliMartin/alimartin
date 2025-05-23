@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.landing_page.field_images
     - field.field.node.landing_page.field_media_image
+    - field.field.node.landing_page.field_metatags
     - field.field.node.landing_page.field_paragraphs
     - field.field.node.landing_page.field_subtitle
     - node.type.landing_page
@@ -24,5 +25,6 @@ content:
 hidden:
   field_images: true
   field_media_image: true
+  field_metatags: true
   field_paragraphs: true
   field_subtitle: true

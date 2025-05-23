@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.field_media_image
+    - field.field.node.blog.field_metatags
     - node.type.blog
   module:
     - media_library
+    - metatag
     - path
     - text
 id: node.blog.default
@@ -37,6 +39,14 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_metatags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   path:
     type: path

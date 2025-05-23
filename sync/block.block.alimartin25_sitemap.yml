@@ -1,0 +1,25 @@
+uuid: 37ff56db-4862-4828-aad1-268f7f770407
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:36a8da6c-8497-4c2d-9c39-bba4ac83cf3c'
+  module:
+    - block_content
+  theme:
+    - alimartin25
+id: alimartin25_sitemap
+theme: alimartin25
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:36a8da6c-8497-4c2d-9c39-bba4ac83cf3c'
+settings:
+  id: 'block_content:36a8da6c-8497-4c2d-9c39-bba4ac83cf3c'
+  label: Sitemap
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
