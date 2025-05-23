@@ -27,33 +27,6 @@
   /* rtl:begin:remove */
   /* rtl:end:remove */
   @import url("https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&family=Oxanium:wght@200..800&family=Tulpen+One&display=swap");
-  /***
-      The new CSS reset - version 1.8.5 (last updated 14.6.2023)
-      GitHub page: https://github.com/elad2412/the-new-css-reset
-  ***/
-  /*
-      Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
-      - The "symbol *" part is to solve Firefox SVG sprite bug
-      - The "html" attribute is exclud, because otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
-   */
-  /* Preferred box-sizing value */
-  /* Reapply the pointer cursor for anchor tags */
-  /* Remove list styles (bullets/numbers) */
-  /* For images to not be able to exceed their container */
-  /* removes spacing between cells in tables */
-  /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-  /* revert the 'white-space' property for textarea elements on Safari */
-  /* minimum style to allow to style meter element */
-  /* preformatted text - use only for this feature */
-  /* reset default text opacity of input placeholder */
-  /* remove default dot (•) sign */
-  /* fix the feature of 'hidden' attribute.
-     display:revert; revert to element instead of attribute */
-  /* revert for bug in Chromium browsers
-     - fix for the content editable attribute will work properly.
-     - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element */
-  /* apply back the draggable feature - exist only in Chromium and Safari */
-  /* Revert Modal native behavior */
   /* Chrome/Opera/Safari */
   /* Firefox 19+ */
   /* IE 10+ */
@@ -13709,63 +13682,6 @@ a > .ck-content code {
 .ck-content code {
   overflow-y: auto;
 }
-.ck-content *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
-}
-.ck-content *,
-.ck-content *::before,
-.ck-content *::after {
-  box-sizing: border-box;
-}
-.ck-content a, .ck-content button {
-  cursor: revert;
-}
-.ck-content ol, .ck-content ul, .ck-content menu {
-  list-style: none;
-}
-.ck-content img {
-  max-inline-size: 100%;
-  max-block-size: 100%;
-}
-.ck-content table {
-  border-collapse: collapse;
-}
-.ck-content input, .ck-content textarea {
-  -webkit-user-select: auto;
-}
-.ck-content textarea {
-  white-space: revert;
-}
-.ck-content meter {
-  -webkit-appearance: revert;
-  appearance: revert;
-}
-.ck-content :where(pre) {
-  all: revert;
-}
-.ck-content ::placeholder {
-  color: unset;
-}
-.ck-content ::marker {
-  content: initial;
-}
-.ck-content :where([hidden]) {
-  display: none;
-}
-.ck-content :where([contenteditable]:not([contenteditable=false])) {
-  -moz-user-modify: read-write;
-  -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
-  -webkit-user-select: auto;
-}
-.ck-content :where([draggable=true]) {
-  -webkit-user-drag: element;
-}
-.ck-content :where(dialog:modal) {
-  all: revert;
-}
 .ck-content .btn, .ck-content button.link, .ck-content .button, .ck-content a.button, .ck-content .node-preview-container .node-preview-backlink,
 .ck-content button.crt-load-more,
 .ck-content .blog-text .view a,
@@ -14209,6 +14125,21 @@ a > .ck-content code {
   width: 90px;
   height: auto;
   margin-bottom: 10px;
+}
+.ck-content #block-alimartin25-sitemap {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  line-height: 1;
+}
+.ck-content #block-alimartin25-sitemap a {
+  color: #ffffff;
+  text-decoration: inherit;
+  border-bottom: inherit;
+}
+.ck-content #block-alimartin25-sitemap a:hover, .ck-content #block-alimartin25-sitemap a:focus {
+  color: #F06111;
 }
 .ck-content #contact-menu {
   position: relative;
