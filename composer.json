@@ -86,6 +86,9 @@
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
             "oomphinc/composer-installers-extender": true
+        },
+        "audit": {
+            "block-insecure": false
         }
     },
     "extra": {
